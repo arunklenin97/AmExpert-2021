@@ -15,13 +15,13 @@ The competition was conducted by American Express on [Analytics Vidhya](https://
 | Product_Holding_B2         | List of products owned by the customer in the future- 6 months
 
 ## Approach 
-The columns Product_Holding_B1 and Product_Holding_B2 are converted into one hot columns as the these features are list of products.
+* The columns Product_Holding_B1 and Product_Holding_B2 are converted into one hot columns as the these features are list of products.
 
-New features like count of current product, converted discrete columns like age and vintage to categorical
+* New features like count of current product, converted discrete columns like age and vintage to categorical
 
-Used count based label encoding technique and one hot encoding technique to convert categorical features 
+* Used count based label encoding technique and one hot encoding technique to convert categorical features 
 
-Trained the dataset after scaling using logistc regression and the top products are sorted based on the distance from predicted probability and decison cutoff for all the products. A cutoff vector which maximizes ROC AUC has been calculated for it and the product which is farthest from cutoff has been given first preference.
+* Trained the dataset after scaling using logistc regression and the top products are sorted based on the distance from predicted probability and decison cutoff for all the products. A cutoff vector which maximizes ROC AUC has been calculated for it and the product which is farthest from cutoff has been given first preference.
 
-Truncated the list to a maximum size of 3 to create the final output
+* Truncated the list to a maximum size of 3 to create the final output
 
