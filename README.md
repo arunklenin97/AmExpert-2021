@@ -23,5 +23,5 @@ Used count based label encoding technique and one hot encoding technique to conv
 
 Trained the dataset after scaling using logistc regression and the top products are sorted based on the distance from predicted probability and decison cutoff for all the products. A cutoff vector which maximizes ROC AUC has been calculated for it and the product which is farthest from cutoff has been given first preference.
 
-Truncated the list to a maximum size of 3 to create te final output
+Truncated the list to a maximum size of 3 to create the final output
 
